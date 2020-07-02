@@ -1,16 +1,15 @@
 const express = require("express");
 const router = express.Router();
+const pagesController = require("../controllers/pagesController");
+const projectsController = require("../controllers/projectsController");
+const blogController = require("../controllers/blogController");
 
-router.get("/", (req, res) => {
-  res.send("<h1>It is working!</h1>");
-});
+router.get("/", pagesController.homePage);
 
-router.get("/about", (req, res) => {
-  res.send({ page: "About Page" });
-});
+router.get("/about", pagesController.aboutPage);
 
-router.get("/gallery", (req, res) => {
-  res.send("<h1>Gallery</h1><div><img src='/img/vegeta.jpeg'/></div>");
-});
+router.get("/projects", projectsController.index);
+
+router.get("/blog", blogController.index);
 
 module.exports = router;
