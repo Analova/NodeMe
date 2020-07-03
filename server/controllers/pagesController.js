@@ -9,6 +9,14 @@ pagesController.aboutPage = (req, res) => {
   res.send({ page: "About Page" });
 };
 
+pagesController.pug = (req, res) => {
+  res.render("test", {
+    title: "testing Pug Page",
+    user: "Bambi",
+    age: 12,
+  });
+};
+
 pagesController.projectsPage = (req, res) => {
   res.send("<h1>Gallery</h1><div><img src='/img/vegeta.jpeg'/></div>");
 };
