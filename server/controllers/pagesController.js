@@ -2,19 +2,11 @@ const express = require("express");
 const pagesController = {};
 
 pagesController.homePage = (req, res) => {
-  res.send("<h1>It is working!</h1>");
+  res.render("pages/home");
 };
 
 pagesController.aboutPage = (req, res) => {
   res.send({ page: "About Page" });
-};
-
-pagesController.pug = (req, res) => {
-  res.render("test", {
-    title: "testing Pug Page",
-    user: "Bambi",
-    age: 12,
-  });
 };
 
 pagesController.projectsPage = (req, res) => {
