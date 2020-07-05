@@ -22,7 +22,7 @@ gulp.task("default", ["styles"], () => {
 });
 
 gulp.task("styles", () => {
-  return gulp
+  gulp
     .src("./client/src/sass/**/*.scss")
     .pipe(
       sass({
@@ -34,7 +34,7 @@ gulp.task("styles", () => {
         browsers: ["last 2 versions"],
       })
     )
-    .pipe(gulp.dest("./public/css"));
+    .pipe(gulp.dest("./client/public/css"));
   //.pipe(browserSync.stream());
 });
 
