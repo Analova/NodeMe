@@ -1,9 +1,38 @@
 @import "reset";
+@import "variables";
 
-body {
-  background: pink;
+* {
+  font-family: $mainFont;
+  box-sizing: border-box;
+}
 
-  h1 {
-    background-color: powderblue;
+header {
+  background: $headerBG;
+  overflow: auto;
+  padding: 15px 20px;
+
+  .logo {
+    display: inline-block;
+    font-family: $displayFont;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+  .menu {
+    display: inline-block;
+    float: right;
+
+    ul {
+      li {
+        padding: 0 10px;
+        display: inline-block;
+
+        a {
+          font-family: $mainFont;
+          color: white;
+          font-weight: 300;
+        }
+      }
+    }
   }
 }
