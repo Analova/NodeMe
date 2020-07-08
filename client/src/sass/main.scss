@@ -1,5 +1,6 @@
 @import "reset";
 @import "variables";
+@import "home";
 
 * {
   font-family: $mainFont;
@@ -10,6 +11,8 @@ header {
   background: $headerBG;
   overflow: auto;
   padding: 15px 20px;
+  position: fixed;
+  width: 100%;
 
   .logo {
     display: inline-block;
@@ -36,3 +39,4 @@ header {
     }
   }
 }
+

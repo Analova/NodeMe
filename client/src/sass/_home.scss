@@ -1,0 +1,19 @@
+.content-area {
+    .topHeader {
+        .topLeft {
+            background: $topLeftBG;
+            display: inline-block;
+            width: 50%;
+            height: 100vh;
+            vertical-align: top;
+        }
+
+        .topRight {
+            display: inline-block;
+            background: $topRightBG;
+            width: 50%;
+            height: 100vh
+        }
+    }
+}
+
