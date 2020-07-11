@@ -6,11 +6,11 @@ pagesController.homePage = (req, res) => {
 };
 
 pagesController.aboutPage = (req, res) => {
-  res.send({ page: "About Page" });
+  res.render("pages/about");
 };
 
-pagesController.projectsPage = (req, res) => {
-  res.send("<h1>Gallery</h1><div><img src='/img/vegeta.jpeg'/></div>");
-};
+// pagesController.projectsPage = (req, res) => {
+//   res.send("<h1>Gallery</h1><div><img src='/img/vegeta.jpeg'/></div>");
+// };
 
 module.exports = pagesController;
