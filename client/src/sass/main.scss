@@ -1,5 +1,6 @@
 @import "reset";
 @import "grid";
+@import "global";
 @import "variables";
 @import "home";
 @import "about";
@@ -7,6 +8,10 @@
 * {
   font-family: $mainFont;
   box-sizing: border-box;
+}
+
+body {
+  background: $bodyBG;
 }
 
 header {

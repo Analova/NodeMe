@@ -12,4 +12,6 @@ router.get("/projects", projectsController.index);
 
 router.get("/blog", blogController.index);
 
+router.get("/contact", pagesController.contact);
+
 module.exports = router;

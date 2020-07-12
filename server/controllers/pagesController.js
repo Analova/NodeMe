@@ -9,8 +9,8 @@ pagesController.aboutPage = (req, res) => {
   res.render("pages/about");
 };
 
-// pagesController.projectsPage = (req, res) => {
-//   res.send("<h1>Gallery</h1><div><img src='/img/vegeta.jpeg'/></div>");
-// };
+pagesController.contact = (req, res) => {
+  res.render("pages/contact");
+};
 
 module.exports = pagesController;
