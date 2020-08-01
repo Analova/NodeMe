@@ -7,22 +7,13 @@ block content
     h1  Show All Projects
     
     div(class="row")
-     div(class="col-md-4")
-       div(class="content-box")
-         div(class="project-image" , style="background:url(https://th.bing.com/th/id/OIP.eQeOQYiXP4FYK9BjmB5lHQHaJT?w=205&h=257&c=7&o=5&pid=1.7) no-repeat center center ;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; width:100% ; min-height:300px")
-          div(class="inside")
-            div
-              h1 Project Title
-              div(class="tags")
-               div(class="pills") #html
-               div(class="pills") #scss
-               div(class="pills") #javascript
-               div(class="pills") #php
-            
-              
-
-    
-   
-    
-      
-       
+     each project in projects
+       div(class="col-md-4")
+         div(class="content-box")
+           div(class="project-image" , style="background:url(" + project.img + ") no-repeat center center ;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; width:100% ; min-height:300px")
+            div(class="inside")
+              div
+                h4= project.title
+                div(class="tags")
+                 each tag in project.tags
+                  div(class="pills") ##{tag}
