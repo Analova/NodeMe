@@ -5,6 +5,7 @@
 @import "home";
 @import "about";
 @import "projects/index";
+@import "projects/show";
 
 * {
   font-family: $mainFont;
@@ -48,14 +49,14 @@ header {
   }
 }
 
-  h1{
-            font-family: $displayFont;
-             display:block;
-             flex-diraction:colunm;
-             margin: 2rem 0;
-             text-align:center;
-             font-size:3rem;
-         }
+h1 {
+  font-family: $displayFont;
+  display: block;
+  flex-diraction: colunm;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 3rem;
+}
 
 .content-area {
   padding-top: 49px;
