@@ -2,10 +2,18 @@
 @import "grid";
 @import "global";
 @import "variables";
+
+// Pages
 @import "home";
 @import "about";
+
+// Projects
 @import "projects/index";
 @import "projects/show";
+
+// Blogs
+@import "blog/index";
+@import "blog/show";
 
 * {
   font-family: $mainFont;
